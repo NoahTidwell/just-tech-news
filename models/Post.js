@@ -13,7 +13,7 @@ class Post extends Model {
         },
         attributes: [
           'id',
-          'post_url',
+          'post__u_r_l',
           'title',
           'created_at',
           [
@@ -49,7 +49,7 @@ Post.init(
       type: DataTypes.STRING,
       allowNull: false
     },
-    post_url: {
+    post__u_r_l: {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
