@@ -90,6 +90,7 @@ router.post('/', (req, res) => {
     });
 });
 
+// Upvote PUT ROUTE must be before :id PUT ROUTE
 router.put('/upvote', (req, res) => {
   // custom static method created in models/Post.js
   Post.upvote(req.body, { Vote, Comment, User })
